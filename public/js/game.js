@@ -116,11 +116,9 @@ function startNotDisabled() {
 function save() {
     let poleyCounters = updateCompletedPoleyThingy();
     let encodedPoley = btoa(poleyCounters);
-    alert(encodedPoley);
     copyToClipboard(encodedPoley);
+    alert(encodedPoley);
 }
-
-console.log(finalPoleys);
 
 function load() {
     let saveCode = prompt("what is your save code?");
