@@ -4,6 +4,7 @@
     <strong>
         <h1>Poley mon moment</h1>
     </strong>
+    <div id="root"></div>
     <br>
     <img id="poleyimg" src="/poleys/poley.png">
     <button id="changePoley" onclick="cPchangePoley(poleys), startNotDisabled(), count('world1')">Collect
@@ -23,10 +24,15 @@
     <br>
     <div id="worldLink"></div>
 
-    <div></div>
-    <select name="" id="">
-        <option value="poley">Poley?</option>
-    </select>
+    <form action="/" method="post">
+        <select name="poleySell" id="poleySell">
+            <option value="poley">Poley?</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit">Sell One.</button>
+    </form>
+    
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">

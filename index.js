@@ -25,3 +25,6 @@ if (port == null || port == "") {
 app.listen(port, function () {
     console.log(`Frenchfries served on table ${port}`);
 });
+
+// Export the Express API
+module.exports = app
